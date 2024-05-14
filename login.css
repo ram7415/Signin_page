@@ -1,0 +1,24 @@
+.adminbtn {
+  background-color: rgb(103, 103, 207);
+  color: white;
+}
+.Employee {
+  background-color: rgb(244, 100, 124);
+  color: white;
+}
+.Client {
+  background-color: rgb(214, 79, 30);
+  color: white;
+}
+.btnhover:hover {
+  box-shadow: 2px 2px 4px gray;
+}
+.body {
+  background-image: linear-gradient(
+      rgba(157, 157, 159, 0.8),
+      rgba(226, 226, 228, 0.8)
+    ),
+    url(backgroundimg.jpg);
+  background-position: center;
+  background-size: cover;
+}
