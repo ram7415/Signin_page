@@ -14,67 +14,109 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="login.css" />
   </head>
   <body class="body">
     <div class="container">
       <div
         class="row justify-content-center align-items-center"
-        style="height: 100vh"
+        style="min-height: 100vh"
       >
         <div class="col-md-6">
+          <!-- Image Section -->
+          <div class="text-center mb-4">
+            <img
+              src="WhatsApp Image 2024-05-15 at 7.21.50 PM.jpeg"
+              alt="Image"
+              style="max-width: 100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Form Section -->
           <form class="w-100" onsubmit="SignIn()">
-            <h1 class="text-center mb-4">Welcome To The Tehno</h1>
-            <h4 class="text-center mb-4" style="color: rgb(94, 93, 93)">
-              Need an account?
-              <a href="signUp.html" class="text-primary">Sign Up</a>
-            </h4>
+            <h1 class="text-center mb-5" style="font-family: monospace">
+              Vasundhara Agro Organic
+            </h1>
 
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-around mb-3 px-4">
               <button
                 onclick="adminbtn()"
+                style="width: 8rem"
                 type="button"
-                class="btn me-4 btnhover adminbtn"
+                class="btn btnhover adminbtn me-3"
               >
                 Admin
               </button>
               <button
                 onclick="employeebtn()"
+                style="width: 8rem"
                 type="button"
-                class="btn me-4 btnhover Employee"
+                class="btn btnhover Employee me-3"
               >
                 Employee
               </button>
               <button
                 onclick="clientbtn()"
+                style="width: 8rem"
                 type="button"
                 class="btn btnhover Client"
               >
                 Client
               </button>
             </div>
-            <h2 class="text-center mt-4 mb-4">Sign In</h2>
-            <div class="form-floating mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="name@example.com"
-              />
-              <label for="email">Email address</label>
+
+            <div class="mx-md-4 px-4">
+              <h2 class="mt-4 mb-3" style="color: rgb(81, 81, 81)">Sign In</h2>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+                <label for="email">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+                <label for="password">Password</label>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </div>
+              <hr />
             </div>
-            <div class="form-floating mb-3">
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                placeholder="Password"
-              />
-              <label for="password">Password</label>
+
+            <div class="text-center">
+              <i
+                style="font-size: 25px; color: rgb(21, 96, 181)"
+                class="fab fa-facebook me-3 icons"
+              ></i>
+              <i
+                style="font-size: 25px; color: rgb(7, 111, 215)"
+                class="fab fa-linkedin me-3 icons"
+              ></i>
+              <i
+                style="font-size: 25px; color: rgb(0, 109, 177)"
+                class="fab fa-twitter me-3 icons"
+              ></i>
+              <i
+                style="font-size: 25px; color: rgb(228, 79, 79)"
+                class="fab fa-google me-3 icons"
+              ></i>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">
-              Sign In
-            </button>
           </form>
         </div>
       </div>

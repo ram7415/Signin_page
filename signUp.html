@@ -23,43 +23,71 @@
         style="height: 100vh"
       >
         <div class="col-md-6">
-          <form class="w-100">
-            <h1 class="text-center mb-4">Sign Up</h1>
+          <!-- Image Section -->
+          <div class="text-center mb-4">
+            <img src="download.jpg" alt="Image" style="max-width: 100%" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Form Section -->
+          <form class="w-100" onsubmit="SignUp()">
+            <h1 class="text-center mb-4">Create an Account</h1>
             <h4 class="text-center mb-4" style="color: rgb(94, 93, 93)">
               Already have an account?
               <a href="login.html" class="text-primary">Sign In</a>
             </h4>
 
-            <div class="form-floating mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="username"
-                placeholder="Username"
-              />
-              <label for="username">Username</label>
+            <div class="" style="margin-left: 4rem; margin-right: 2rem">
+              <h2 class="mt-4 mb-4">Sign Up</h2>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="Your Full Name"
+                  style="width: calc(100% - 1.25rem)"
+                />
+                <label for="fullName">Full Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  style="width: calc(100% - 1.25rem)"
+                />
+                <label for="email">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                  style="width: calc(100% - 1.25rem)"
+                />
+                <label for="password">Password</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmPassword"
+                  placeholder="Confirm Password"
+                  style="width: calc(100% - 1.25rem)"
+                />
+                <label for="confirmPassword">Confirm Password</label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary btn-block"
+                style="width: calc(100% - 1.25rem); margin-left: 0"
+              >
+                Sign Up
+              </button>
             </div>
-            <div class="form-floating mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="name@example.com"
-              />
-              <label for="email">Email address</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                placeholder="Password"
-              />
-              <label for="password">Password</label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">
-              Sign Up
-            </button>
           </form>
         </div>
       </div>
